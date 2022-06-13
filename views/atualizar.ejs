@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleatualizar.css" />
+
+
+    <title>Atualização</title>
+</head>
+<body>
+    
+
+<main>
+
+<section id="card">
+    
+   <h1><%= instru.nome%></h1>
+<img src="<%= instru.imagem%>" alt="">
+
+
+  </section>
+
+  <section id="atualizacao">
+
+    <h1 id="at">Atualização</h1>
+
+    <form action="/atualizacao/<%= instru.Id%>" method="POST">
+
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required value="<%= instru.nome%>" />
+
+      <label for="imagem">Link da Imagem:</label>
+      <input type="text" id="imagem" name="imagem" required value="<%= instru.imagem%>" />
+
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" name="cor" required value="<%= instru.cor%>"/>
+
+      <label for="DataDeFabricacao">Data de Fabricacao:</label>
+      <input
+        type="text"
+        id="DataDeFabricacao"
+        name="DataDeFabricacao"
+        required value="<%= instru.DataDeFabricacao%>"
+      />
+
+      <label for="caracteristica">Característica:</label>
+      <input type="text" id="caracteristica" name="caracteristica" required value="<%= instru.caracteristica%>"/>
+
+      <label for="valor">Valor:</label>
+      <input type="text" id="valor" name="valor" required value="<%= instru.valor%>"/>
+
+      <label for="FormaDePagamento">Forma de pagamento:</label>
+      <input
+        type="text"
+        id="FormaDePagamento"
+        name="FormaDePagamento"
+        required value="<%= instru.FormaDePagamento%>"
+      />
+
+      <button id="btnCadastrar" type="submit">Atualizar</button>
+    </form>
+
+
+</main>
+
+
+
+
+<footer>
+    <p>
+      <a href="http://www.blueedtech.com.br" target="_blank"
+        >www.blueedtech.com.br</a
+      >
+      <br />-Todos os direitos reservados.
+    </p>
+  </footer>
+
+
+
+
+</body>
+</html>

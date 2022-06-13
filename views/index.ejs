@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lista</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul id="menu">
+        <div id="indice">
+
+         
+          <li><a href="/cadastrar">cadastre um instrumento</a></li>
+       
+
+        </div>
+
+        <div id="indice">
+          <li><a href="#cards">Instrumentos cadastrados</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <h1 id="h1">Mundo dos instrumentos, o maior site de vendas do Brasil!</h1>
+    <header>
+      <img
+        id="imghd"
+        src="http://oacustico.com.br/blog/wp-content/uploads/2016/06/DSC07913.jpg"
+        alt=""
+      />
+    </header>
+
+    <main>
+      <h2>Instrumentos Disponíveis</h2>
+
+      <section id="cards">
+        <% instrumentos.forEach( (instru) =>{ %>
+        <div class="card">
+          <h1 id="Cards"><%=instru.nome%></h1>
+          <img src="<%=instru.imagem%>" alt="imagem" />
+          <p><%=instru.valor%></p>
+
+          <a id="instru" href="/descricao/<%= instru.Id %>">Detalhes</a>
+          <a id="instru" href="/atualizar/<%= instru.Id %>">Atualizar</a>
+          <a id="instru" href="/remover/<%= instru.Id %>">Remover</a>
+        </div>
+
+        <% })%>
+      </section>
+
+     
+    </main>
+
+    <footer>
+      <p>
+        <a href="http://www.blueedtech.com.br" target="_blank"
+          >www.blueedtech.com.br</a
+        >
+        <br />-Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>

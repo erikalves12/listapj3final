@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: roboto;
+}
+
+#h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+nav {
+  padding: 1rem;
+  background-color: rgba(51, 47, 49, 0.233);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  z-index: 999;
+}
+#indice li a {
+  text-decoration: none;
+
+  color: black;
+}
+ul#menu {
+  font-size: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+header {
+  padding: 2rem;
+  margin: 0 1.5rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+}
+header #imghd {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+main {
+  margin: 0 1.5rem 0 1.5rem;
+}
+section#cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+section#cards div.card {
+  margin-top: 2rem;
+  width: 23rem;
+}
+
+section#cards div.card img {
+  box-shadow: 10px 5px 5px rgb(122, 120, 120);
+  width: 100%;
+}
+
+section#cadastro {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section#cadastro h2 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  color: rgb(56, 42, 42);
+}
+
+section#cadastro form input {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  outline: none;
+
+  margin: 0.8rem;
+}
+
+section#cadastro form label {
+  margin: 0.8rem;
+  color: rgb(17, 14, 16);
+}
+
+section#cadastro form {
+  margin: 0 1.5rem 0 1.5rem;
+  width: 60%;
+}
+
+#btnCadastrar {
+  padding: 0.5rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: solid 2px rgba(167, 5, 5, 0.637);
+  background-color: rgb(5, 5, 5);
+  color: rgb(236, 221, 227);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#btnCadastrar:hover {
+  background-color: rgb(219, 226, 230);
+  color: rgb(11, 12, 12);
+  border: solid 2.5px rgba(13, 14, 14, 0.637);
+}
+#instru {
+  padding: 0.5rem;
+  width: 50%;
+  display: flex;
+  text-decoration: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  border: solid 2px rgba(0, 0, 0, 0.637);
+  justify-content: center;
+  border-radius: 0.4rem;
+  background-color: rgb(233, 235, 235);
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+#instru:hover {
+  transform: scale(0.9);
+  background-color: rgb(5, 5, 5);
+  border: solid 2.5px rgba(13, 14, 14, 0.637);
+  color: rgb(237, 245, 245);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: rgba(89, 99, 99, 0.534);
+  font-size: 1.2rem;
+  width: 100%;
+}
