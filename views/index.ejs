@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <%- include('./components/head' ) %>
-  </head>
 
-  <body>
+    <%- include('./components/head' ) %>
+ 
+
+  
     <nav>
       <%- include('./components/nav') %>
     </nav>
 
     <h1 id="h1">Mundo dos instrumentos, o maior site de vendas do Brasil!</h1>
     <header>
-      <%- include('./components/head') %>
+     
     </header>
 
     <main>
-      <h2>Instrumentos Disponíveis</h2>
+      <h2 id="instrum">Instrumentos Disponíveis</h2>
 
       <section id="cards">
         <% Instrumento.forEach( (instru) =>{ %>
@@ -45,8 +43,8 @@
 
 
 
-    <footer>
+   <footer>
       <%- include('./components/footer') %>
+    
     </footer>
-  </body>
-</html>
+

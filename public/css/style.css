@@ -50,7 +50,13 @@ section#cards {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+#instrum{
 
+  text-align: center;
+  background-color: black;
+  color: rgb(255, 248, 248);
+  font-size: 1.8rem;
+   }
 section#cards div.card {
   margin-top: 2rem;
   width: 23rem;
@@ -180,7 +186,7 @@ footer {
   color: #fff;
 }
 
-.modal-header a#close-modal-put {
+.modal-header a #close-modal-put {
   font-size: 1.4rem;
   color: #fff;
   text-decoration: none;
