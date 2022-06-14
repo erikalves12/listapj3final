@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-
-
-    <title>Cadastrar</title>
+  <%- include('./components/head' ) %>
 </head>
+
+
+<body>
+
 
 <main>
 
@@ -16,22 +14,23 @@
         <h2>Cadastro</h2>
 
         <form action="/add" method="POST">
+
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required />
+
+          <label for="imagem">Link da Imagem</label>
+          <input type="text" id="imagem" name="imagem" required />
 
           <label for="cor">Cor:</label>
           <input type="text" id="cor" name="cor" required />
 
-          <label for="DataDeFabricacao">Data de Fabricacao:</label>
+          <label for="datadefabricacao">Data de Fabricacao:</label>
           <input
             type="text"
             id="data de fabricacao"
-            name="DataDeFabricacao"
+            name="datadefabricacao"
             required
           />
-
-          <label for="valor">Valor</label>
-          <input type="text" id="valor" name="valor" required />
 
           <label for="caracteristica">caracteristica</label>
           <input
@@ -41,14 +40,14 @@
             required
           />
 
-          <label for="imagem">Link da Imagem</label>
-          <input type="text" id="imagem" name="imagem" required />
+          <label for="valor">Valor</label>
+          <input type="text" id="valor" name="valor" required />
 
-          <label for="FormaDePagamento">Forma de pagamento</label>
+          <label for="formadepagamento">Forma de pagamento</label>
           <input
             type="text"
-            id="FormaDePagamento"
-            name="FormaDePagamento"
+            id="Forma De Pagamento"
+            name="formadepagamento"
             required
           />
 
@@ -58,21 +57,18 @@
 
 
 
-
-
-
-
 </main>
 
-<body>
 
+<footer>
+  <p>
+    <a href="http://www.blueedtech.com.br" target="_blank"
+      >www.blueedtech.com.br</a
+    >
+    <br />-Todos os direitos reservados.
+  </p>
+</footer>
 
-
-
-
-
-
-
-    
+   
 </body>
 </html>

@@ -1,0 +1,60 @@
+
+
+<section class = "modal-overlay" id= "overlay">
+
+<div class=" modal" id="modal">
+    
+<div class="modal-header">
+    <h3>Atualizar o Instrumento</h3>
+    <a href="/" id="close-modal-put"><i class="bi bi-x-circle-fill"></i></a>
+</div>
+
+
+<div class="modal-body">
+
+    <form class="form-modal" action="/update/<%=instruPut.id %>" method="POST">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="<%= instruPut.nome%>" />
+
+        <label for="imagem">Link da Imagem</label>
+        <input type="text" id="imagem" name="imagem" value="<%= instruPut.imagem%>" />
+
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" name="cor" value="<%= instruPut.cor %>" />
+
+        <label for="datadefabricacao">Data de Fabricacao:</label>
+        <input
+          type="text"
+          id="data de fabricacao"
+          name="datadefabricacao"
+          value="<%= instruPut.datadefabricacao %>"
+        />
+
+        <label for="caracteristica">caracteristica</label>
+        <input
+          type="text"
+          id="caracteristica"
+          name="caracteristica"
+          value="<%= instruPut.caracteristica %>"
+        />
+
+        <label for="valor">Valor</label>
+        <input type="text" id="valor" name="valor" value="<%= instruPut.valor %>" />
+
+        <label for="formadepagamento">Forma de pagamento</label>
+        <input
+          type="text"
+          id="Forma De Pagamento"
+          name="formadepagamento"
+          value="<%= instruPut.formadepagamento %>"
+        />
+
+        <button id="btnAtualizar" type="submit">Atualizar</button>
+      </form>
+
+</div>
+
+
+</div>
+</section>

@@ -1,0 +1,24 @@
+<section class = "modal-overlay" id= "overlay">
+
+    <div class=" modal" id="modal">
+        
+    <div class="modal-header">
+        <h3>Remover Instrumento</h3>
+        <a href="/" id="close-modal-del"><i class="bi bi-x-circle-fill"></i></a>
+    </div>
+    
+    
+    <div class="modal-body">
+    
+       <p>Gostaria de excluir o Instrumento: <%= instruDel.nome%></p>
+<div id="btns-del">
+<a id="no" href="/">Não</a>
+<a id="yes" href="/remove/<%= instruDel.id %>">Sim</a>
+
+</div>
+
+    </div>
+    
+    
+    </div>
+    </section>
