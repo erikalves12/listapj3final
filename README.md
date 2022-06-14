@@ -1,4 +1,4 @@
-# listapj3
+# listapjfinal
 Este projeto seguiu os criterios MVC.
 
 Instalamos as dependências; Express,Nodemon e EJS.
