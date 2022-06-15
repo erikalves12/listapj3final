@@ -2,7 +2,8 @@ const Sequelize = require("sequelize");
 const connection = require("../database/db");
 
 const Instru = connection.define(
-  "instru",  {
+  "instru",
+  {
     id: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
@@ -52,4 +53,9 @@ const Instru = connection.define(
   }
 );
 
-module.exports = Instru
+const initTable = async () => {
+  await Instru.sync();
+};
+initTable();
+
+module.exports = Instru;
