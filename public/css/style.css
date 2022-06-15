@@ -186,7 +186,12 @@ footer {
   color: #fff;
 }
 
-.modal-header a #close-modal-put {
+.modal-header a#close-modal-put {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+.modal-header a#close-modal-del {
   font-size: 1.4rem;
   color: #fff;
   text-decoration: none;
